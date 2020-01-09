@@ -8,7 +8,8 @@ The game is dotted with many game modes such as player vs player, player vs AI a
 
 **Project display :**
 
-![demo image](../images/chess_images/1.jpg){: .floater}
+![image](images/chess_images/1.jpg)
+
 Our project consists of a chess game that gives the user the opportunity to play with one of these friends, play against an artificial intelligence or see 2 artificial intelligences play against each other. The program also allows the player to leave his game at any time, start over until his decision of the game mode, display all the shots that have been played and the possibility to go back on a that we regret (these features are however not accessible when the user chooses the game mode where an artificial intelligence play against another). In addition, the program automatically detects if the game is over and asks the user if he wants to start again. Finally, the program is designed not to give the user the chance to make an illegal move (that is, a blow that would put his own king in check).
 
 <br><br>
@@ -17,40 +18,40 @@ Our project consists of a chess game that gives the user the opportunity to play
 
 When the program starts, we have access to a menu that allows us to choose the game mode of the program. If we click on the button man vs man, we end up on the game where we have several features at the bottom right.
 
-![demo image](../images/chess_images/5.png){: .floater}
-![demo image](../images/chess_images/6.png){: .floater}
+![image](images/chess_images/5.png)
+![image](images/chess_images/6.png)
 
 <br><br><br><br><br><br><br><br><br>
 
 Obviously, it is possible to play to failure, but we can also cancel a shot (as can be seen from the image on the left to the image on the right).
 
-![demo image](../images/chess_images/7.png){: .floater}
-![demo image](../images/chess_images/8.png){: .floater}
+![image](images/chess_images/7.png)
+![image](images/chess_images/8.png)
 
 <br><br><br><br><br><br><br><br><br>
 
 It is also possible to display the list of shots that have been played and the program is able to automatically detect an end of the game and ask if the user wants to start again.
 
-![demo image](../images/chess_images/9.png){: .floater}
-![demo image](../images/chess_images/10.png){: .floater}
+![image](images/chess_images/9.png)
+![image](images/chess_images/10.png)
 <br><br><br><br><br><br><br><br><br>
 
 The program also detects when there is a promotion and asks the user what he wants as a play (if he clicks cancel his automatically chooses the queen as it is the most chosen one). The program also refuses to let the user play an illegal move.
 
-![demo image](../images/chess_images/11.png){: .floater}
-![demo image](../images/chess_images/12.png){: .floater}
+![image](images/chess_images/11.png)
+![image](images/chess_images/12.png)
 <br><br><br><br><br><br><br><br><br>
 
 When the user chooses either the man vs. machine game mode or the machine vs machine mode, the program asks him which artificial intelligence he wants to play, if the artificial intelligence needs to be told the number of moves in advance he can see, the program asks the user the number of moves in advance and, if the user chose the man vs machine mode, the program asks the user if he wants to start.
 
-![demo image](../images/chess_images/13.png){: .floater}
-![demo image](../images/chess_images/14.png){: .floater}
-![demo image](../images/chess_images/15.png){: .floater}
+![image](images/chess_images/13.png)
+![image](images/chess_images/14.png)
+![image](images/chess_images/15.png)
 <br><br><br><br><br><br><br><br><br>
 
 Finally, when the user chooses machine vs. machine, the features on the right are no longer accessible because the parts are more or less deterministic.
 
-![demo image](../images/chess_images/16.png){: .floater}
+![image](images/chess_images/16.png)
 <br><br><br><br><br><br><br><br><br>
 
 **How algorithms work:**
@@ -65,15 +66,15 @@ Prerequisites:
 
 - We must understand what a decision tree is: In graph theory, it is the representation of all the movements that a player can make and where the branches are the movements made and the circles are the different states of the chessboard possible. Example:
 
-![demo image](../images/chess_images/17.png){: .floater}
-![demo image](../images/chess_images/18.jpg){: .floater}
+![image](images/chess_images/17.png)
+![image](images/chess_images/18.jpg)
 <br><br><br><br><br><br><br><br><br>
 
 - We must also understand that a recursive function: A recursive function is a function that calls itself in the function. Example:
 
 The factorial function could be calculated thanks to a recursive function (it calls the factorial function in the factorial function):
 
-![demo image](../images/chess_images/19.png)
+![image](images/chess_images/19.png)
 
 1. The application in the context of failures:
 
@@ -87,20 +88,23 @@ The difference between these two is the fact that alpha beta is exponentially fa
 
 Prerequisites:
 
-![demo image](../images/chess_images/20.png)<br>
+![image](images/chess_images/20.png)
+<br>
 this equation gives this graph and this equation is called the sigmoid function. 
 <br><br>
-![demo image](../images/chess_images/21.png)<br>
+![image](images/chess_images/21.png)
+<br>
 Figure 4: [https://www.desmos.com/calculator](https://www.desmos.com/calculator)
 
 __The explanation:__
 
 Almost everything you need to know about neural networks is on this image.
 
-![demo image](../images/chess_images/22.png)
+![image](images/chess_images/22.png)
 
 Now, you have to explain the picture! To the right of the image is what is commonly called a perceptron (this is the equivalent of a neuron in a neural network). First of all, you have to know that the perceptron has an equal amount of &quot;weights&quot; that there will be input and its function is to take each entry and multiply it by the weight and to sum up all the entries \* weights; the result of this sum will be named the entry total. Finally, we take the input total and move it into the activation function 1 / (1 + e ^ -x). The reason why it is this function is because this function is continuous, it will give a number between 0 and 1 and it is really easily differentiable. The fact that it is easily differentiable is that it will be useful to learn. Yes, the neural network is a structure that will learn as you have probably guessed by changing the value of these weights. In the case of a perceptron, the change will be done following this function:
-![demo image](../images/chess_images/23.png)
+
+![image](images/chess_images/23.png)
 
 Delta w<sub>j</sub>: This corresponds to the adjustment to be made to weight number j
 
@@ -112,7 +116,7 @@ X<sub>j</sub>: This is the jth entry What is really interesting with this equati
 
 The equations for perceptrons are as follows:
 
-![demo image](../images/chess_images/24.png)
+![image](images/chess_images/24.png)
 
 The term &quot;backpropagation&quot; refers to the process of adjusting weights by taking what is assumed to be output in the last &quot;layer&quot; (which refers to the layer of the neural network) and through the derivative of the sigmoid function. If you are not confident of the result, you can have a proof of this on pages 110 to 113 in the book &quot;Statistical learning theory&quot;. To give you an idea, a &quot;normal&quot; neuron system is about 30 times larger than the one I showed, but the basic idea remains the same.
 
@@ -152,14 +156,11 @@ AlphaBeta : Anonymous. «Élagage alpha bêta» in Wikipedia, [<a href = "https:
 
 Neural Network : KULKARNI, Sanjeev et Gilbert HARMAN. _An Elementary Introduction to Statistical LearningTheory_, John Wiley &amp; Sons, Inc., New Jersey, 2011, 196 p.
 
-
-
-Programme python permettant de jouer aux échec. Implémentation de plusieurs engines connus (StockFish, Komodo, Gull, LeelaChessZero) (partie de Léo Gagnon) avec leur client .exe. Implémentation manuelle de MinMax avec étalonage Alpha-Bêta et expérimentations avec de l'apprentissage machine (partie de Souleiman Ayoub)
-## Auteurs
+## Authors
 
 * **Souleiman Ayoub** - [souleiman2](https://github.com/souleiman2)
 * **Léo Gagnon** - [LeKo0](https://github.com/LeKo0)
 
-## À propos
+## About
 
-Projet réalisé dans le cadre d'un projet intégrateur. Collège de Bois-de-Boulogne 2018. DEC-SIM.
+Project carried out as part of an integrative project. Cégep de Bois-de-Boulogne 2018. DEC-SIM.
